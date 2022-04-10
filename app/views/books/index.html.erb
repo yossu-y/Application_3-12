@@ -2,15 +2,18 @@
 
 <% @books.each do |book| %>
 
-  <p>Title:</p>
-  <span>
-    <%= link_to book.title, book_path(book.id) %>
-  </span>
-
-  <p>Body:</p>
-  <span>
-    <%= link_to book.body, book_path(book.id) %>
-  </span>
+  <p>
+    Title:
+   <span>
+     <%= link_to book.title, book_path(book.id) %>
+   </span>
+  </p>
+  <p>
+    Body:
+    <span>
+      <%= link_to book.body, book_path(book.id) %>
+    </span>
+  </p>
   
   <br/>
 
@@ -19,5 +22,4 @@
   <%= link_to "Edit", edit_book_path(book.id) %>
   |
   <%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm" => "Are you sure？" %>
-
   <% end %>
