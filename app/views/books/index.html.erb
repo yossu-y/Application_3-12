@@ -32,13 +32,14 @@
 <% end %>
 
 <%= form_with model: @book,url: "/books", method: :post do |f| %>
+
+  <label class="booktitle">Title</label>
   <div class="form">
-    Title
     <%= f.text_field :title %>
   <div>
 
+  <label class="booktitle">Body</label>
   <div class="form">
-    Body
     <%= f.text_area :body %>
   </div>
   <div class="action">
