@@ -1,3 +1,7 @@
+<div class="noticefications">
+  <p><%=flash[:notice] %></p>
+</div>
+
 <h1>Books</h1>
 
 <table>
@@ -43,6 +47,6 @@
     <%= f.text_area :body %>
   </div>
   <div class="action">
-  <%= f.submit "Create book" %>
+  <%= f.submit "Create Book" %>
   </div>
 <% end %>
